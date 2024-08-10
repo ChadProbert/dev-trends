@@ -1,15 +1,15 @@
-// fetches top 28 articles most popular this month from the dev.to api and displays them on the page
+// Fetches top 28 articles most popular this month from the dev.to api and displays them on the page
 const popularThisMonth = () => {
   const articlesContainer = document.getElementById('articlesContainer');
 
-  // clears the articles container
+  // Clears the articles container
   articlesContainer.innerHTML = '';
-  // can adjust per_page value to get more or less articles
-  // can adjust tags to get articles for different topics
+  // Can adjust per_page value to get more or less articles
+  // Can adjust tags to get articles for different topics
   fetch('https://dev.to/api/articles?per_page=28&tags=css, ui, software, python, java, javascript, html, django, development, node, databases, developer tools, mobile, design, ai, productivity, webdev, programming&top=30')
     .then(response => response.json())
     .then(data => {
-      // created a card for each article, appended it to the articles container, and added the article data to the card
+      // Created a card for each article, appended it to the articles container, and added the article data to the card
       data.forEach(article => {
         const card = document.createElement('div');
         card.classList.add('col', 'mb-4');
@@ -31,7 +31,7 @@ const popularThisMonth = () => {
             ${article.readable_publish_date} | ${article.reading_time_minutes}
             minute reading time
           </p>
-  
+
           <div class="bottom-info">
             <div class="row">
               <div class="col-4 d-flex align-items-center justify-content-center">
@@ -84,18 +84,18 @@ const popularThisMonth = () => {
     });
 }
 
-// runs on page load since it is the default option
+// Runs on page load since it is the default option
 popularThisMonth();
 
-// fetches top 28 most popular articles today from the dev.to api and displays them on the page
+// Fetches top 28 most popular articles today from the dev.to api and displays them on the page
 const popularToday = () => {
   const articlesContainer = document.getElementById('articlesContainer');
 
-  // clear the articles container
+  // Clear the articles container
   articlesContainer.innerHTML = '';
 
-  // can adjust per_page value to get more or less articles
-  // can adjust tags to get articles for different topics
+  // Can adjust per_page value to get more or less articles
+  // Can adjust tags to get articles for different topics
   fetch('https://dev.to/api/articles?per_page=28&tags=css, ui, software, python, java, javascript, html, django, development, node, databases, developer tools, mobile, design, ai, productivity, webdev, programming')
     .then(response => response.json())
     .then(data => {
@@ -120,7 +120,7 @@ const popularToday = () => {
             ${article.readable_publish_date} | ${article.reading_time_minutes}
             minute reading time
           </p>
-  
+
           <div class="bottom-info">
             <div class="row">
               <div class="col-4 d-flex align-items-center justify-content-center">
@@ -174,13 +174,13 @@ const popularToday = () => {
 }
 
 
-// fetches top 28 articles most popular all time from the dev.to api and displays them on the page
+// Fetches top 28 articles most popular all time from the dev.to api and displays them on the page
 const popularAllTime = () => {
   const articlesContainer = document.getElementById('articlesContainer');
 
   articlesContainer.innerHTML = '';
-  // can adjust per_page value to get more or less articles
-  // can adjust tags to get articles for different topics
+  // Can adjust per_page value to get more or less articles
+  // Can adjust tags to get articles for different topics
   fetch('https://dev.to/api/articles?per_page=28&tags=css, ui, software, python, java, javascript, html, django, development, node, databases, developer tools, mobile, design, ai, productivity, webdev, programming&top=1000000')
     .then(response => response.json())
     .then(data => {
@@ -205,7 +205,7 @@ const popularAllTime = () => {
             ${article.readable_publish_date} | ${article.reading_time_minutes}
             minute reading time
           </p>
-  
+
           <div class="bottom-info">
             <div class="row">
               <div class="col-4 d-flex align-items-center justify-content-center">
@@ -259,7 +259,7 @@ const popularAllTime = () => {
     });
 }
 
-// handles the calling of the appropriate function based on the selected option
+// Handles the calling of the appropriate function based on the selected option
 const selectOption = () => {
   let selectedValue = document.querySelector('select').value;
   if (selectedValue === 'today') {
@@ -272,14 +272,14 @@ const selectOption = () => {
   }
 }
 
-// handles the dark-mode class toggling and the icon change when the dark mode button is clicked
+// Handles the dark-mode class toggling and the icon change when the dark mode button is clicked
 document.addEventListener('DOMContentLoaded', () => {
   const darkModeButton = document.querySelector('.darkModeButton');
   const body = document.body;
 
   darkModeButton.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
-    // switches the between the moon icon and sun icon when clicked
+    // Switches the between the moon icon and sun icon when clicked
     if (body.classList.contains('dark-mode')) {
       darkModeButton.innerHTML = '<i class="bi bi-sun-fill"></i>';
     } else {
@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/* references: 
+/* References:
 https://developers.forem.com/api/v0
-My own work from Level 2 task 18 
+My own work from Level 2 task 18
 */
