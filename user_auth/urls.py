@@ -3,7 +3,7 @@ from . import views
 
 app_name = "user_auth"
 
-# defining the app's url paths based on the views defined in views.py
+# Defining the app's url paths based on the views defined in views.py
 urlpatterns = [
     path("", views.user_login, name="login"),
     path("authenticate_user/", views.authenticate_user, name="authenticate_user"),
@@ -12,5 +12,5 @@ urlpatterns = [
     path("logout/", views.user_logout, name="logout"),
 ]
 
-# references:
+# References:
 # This task's PDF - HyperionDev
