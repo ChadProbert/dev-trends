@@ -1,0 +1,16 @@
+Welcome to devTrends's documentation!
+======================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   modules
+   news
+   user_auth
+
+.. automodule:: news.views
+   :members:
+
+.. automodule:: user_auth.views
+   :members:
