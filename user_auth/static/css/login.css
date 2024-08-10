@@ -4,8 +4,8 @@
 body {
 	font-family: "Inter", sans-serif;
 	/* Removed the horizontal scrollbar */
-	padding-left: 12px;
-	padding-right: 12px;
+	padding-left: 15px;
+	padding-right: 15px;
 	/* added a background image */
 	background: url("/static/images/authentication-background.svg");
 	background-size: cover;
