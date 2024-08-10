@@ -2,9 +2,15 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 
 
-# Protected the route with the login_required decorator
-@login_required
+@login_required  # Protected the route
 def index(request):
+    """Render the index page for logged-in users.
+
+    :param HttpRequest request: The HTTP request object.
+
+    :returns: The rendered 'index.html' template.
+    :rtype: HttpResponse
+    """
     return render(request, 'news/index.html')
 
 
