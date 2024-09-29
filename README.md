@@ -6,7 +6,7 @@
   ### Dev Trends
 
   <p>
-    A platform for developers to stay up to date with the latest trends in software development.
+    Trends today, skills tomorrow.
     <br />
     <br />
     <a href="https://github.com/ChadProbert/dev-trends/issues">Report Bug</a>
@@ -39,7 +39,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#set-up-your-virtual-env">Set up your Virtual Env</a></li>
+        <li><a href="#setup-your-virtual-environment">Setup Your Virtual Environment</a></li>
         <li><a href="#installing-dependencies">Installing Dependencies</a></li>
         <li><a href="#running-dev-trends">Running Dev Trends</a></li>
       </ul>
