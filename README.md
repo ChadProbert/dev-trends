@@ -39,7 +39,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#setup-your-virtual-environment">Setup Your Virtual Environment</a></li>
+        <li><a href="#setup-your-virtual-environment">Setup your Virtual Environment</a></li>
         <li><a href="#installing-dependencies">Installing Dependencies</a></li>
         <li><a href="#running-dev-trends">Running Dev Trends</a></li>
       </ul>
@@ -92,6 +92,19 @@ The application should now be running at **http://127.0.0.1:8000/**.
 
 <br/>
 
+## Running With Docker
+
+To run the application with Docker, run the following commands in the terminal:
+
+    
+    sudo docker pull chadcprobert/my-website
+
+then
+    
+    sudo docker run -p 8000:8000 my-website
+
+
+<br />
 
 ## Sphinx Documentation
 To view the documentation generated using **[Sphinx](https://www.sphinx-doc.org/en/master/)**, navigate to the `docs/_build/html` folder and open `index.html` in your browser.
