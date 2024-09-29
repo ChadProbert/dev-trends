@@ -98,11 +98,11 @@ The application should now be running at **http://127.0.0.1:8000/**.
 
 To run the application with Docker, run the following commands in the terminal:
 
-    
+
     sudo docker pull chadcprobert/my-website
 
 then
-    
+
     sudo docker run -p 8000:8000 my-website
 
 
@@ -114,7 +114,7 @@ To view the documentation generated using **[Sphinx](https://www.sphinx-doc.org/
 <br />
 
 ## Contributors
-[<img src="https://github.com/ChadProbert.png" width="40"/>](https://github.com/ChadProbert/)
+[<img src="https://github.com/ChadProbert.png" width="40" style="border-radius: 5px;"/>](https://github.com/ChadProbert/)
 <br />
 <br />
 <br />
