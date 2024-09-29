@@ -1,8 +1,7 @@
 <a name="readme-top"></a>
-
 <!-- PROJECT LOGO -->
 <div align="center">
-    <img src="placeholder.webp" alt="Logo" width="80" height="80">
+  <img src="placeholder.webp" alt="Logo" width="250" height="250" style="border-radius: 15px;">
 
   ### Dev Trends
 
@@ -24,9 +23,10 @@
 
   #### Built With
 
-  ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-  ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-  ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+  ![DJANGO](https://img.shields.io/badge/Django-016201?style=for-the-badge&logo=django&logoColor=white)
+  ![PYTHON](https://img.shields.io/badge/Python-4221E7?style=for-the-badge&logo=python&logoColor=F8BB01)
+  ![JavaScript](https://img.shields.io/badge/JavaScript-F3BF21?style=for-the-badge&logo=javascript&logoColor=black)
+  ![CSS](https://img.shields.io/badge/CSS3-4067DB?style=for-the-badge&logo=css3&logoColor=white)
 
 </div>
 
@@ -57,8 +57,8 @@ To get a local copy up and running follow these steps.
 
 <br/>
 
-### Set up your Virtual Env
-Install [VirtualEnv](https://virtualenv.pypa.io/) globally
+### Setup Your Virtual Environment
+Install **[VirtualEnv](https://virtualenv.pypa.io/)** globally
 
 
     pip3 install virtualenv
@@ -74,7 +74,7 @@ Activate virtual environment
 <br/>
 
 ### Installing Dependencies
-Once the virtual environment is activated, install project dependencies using:
+**Once the virtual environment is setup**, install project dependencies using:
 
     pip3 install -r requirements.txt
 
@@ -85,17 +85,21 @@ Once the virtual environment is activated, install project dependencies using:
 Start the development server using:
 
     python3 manage.py runserver
-    
+
+<br/>
+
+The application should now be running at **http://127.0.0.1:8000/**.
+
 <br/>
 
 
 ## Sphinx Documentation
-To view the documentation generated using [Sphinx](https://www.sphinx-doc.org/en/master/), navigate to the `docs/_build/html` folder and open `index.html` in your browser.
+To view the documentation generated using **[Sphinx](https://www.sphinx-doc.org/en/master/)**, navigate to the `docs/_build/html` folder and open `index.html` in your browser.
 
 <br />
 
 ## Contributors
-[<img src="https://github.com/ChadProbert.png" width="40px;"/>](https://github.com/ChadProbert/)
+[<img src="https://github.com/ChadProbert.png" width="40"/>](https://github.com/ChadProbert/)
 <br />
 <br />
 <br />
