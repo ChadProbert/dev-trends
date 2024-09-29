@@ -1,0 +1,253 @@
+/* Importing Inter font */
+@import url("https://fonts.cdnfonts.com/css/inter");
+
+body {
+	font-family: "Inter", sans-serif;
+}
+
+.actions {
+	margin-top: 15px;
+	/* Used flexbox for button alignment since float right was causing center alignment issues */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.user-info {
+	/* Displayed the welcome user text at the top left of the page */
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	font-weight: 600;
+	font-size: 21px;
+}
+
+/* Re-aligned the logout and dark mode button to the top right of the page */
+.buttons {
+	display: flex;
+	align-items: center;
+}
+
+/* Styling of the dark mode button while in light mode */
+.darkModeButton {
+	background-color: #000;
+	color: #fff;
+	height: 48px;
+	width: 48px;
+	border-radius: 15px;
+	margin-right: 15px;
+	margin-left: 10px;
+	border: 4px solid #000;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 4px 0px;
+}
+
+/* Styling of the logout button while in light mode */
+.logout-button {
+	width: 148px;
+	height: 48px;
+	flex-shrink: 0;
+	border-radius: 15px;
+	border: 3px solid #6100ff;
+	color: #6100ff;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 700;
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 4px 0px;
+}
+
+/* Most of the styling was directly taken from my Figma design */
+h1 {
+	color: #6100ff;
+	font-size: 50px !important;
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 48.41px;
+	text-align: center;
+	margin-top: 4%;
+	margin-bottom: 10%;
+}
+
+/* Lightning bolt icon styles */
+.bi-lightning-charge-fill {
+	color: #ffd217;
+	margin-bottom: 15px;
+}
+
+/* Centered the content inside the columns */
+.col {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+  /* Used a percentage width to make it responsive */
+  width: 90%;
+  height: 400px;
+  background-color: #f1f1f1;
+  border: 1px solid #c1c1c168;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 10px 0px;
+  overflow: hidden; /* Prevent content from overflowing */
+  position: relative;
+}
+
+/* Style changes to the article image returned from the api */
+.card-img-top {
+	padding: 15px;
+	border-radius: 20px;
+}
+
+.card-title {
+	font-size: 18px;
+	color: black;
+}
+
+.card-text {
+	font-size: 12px;
+	margin-bottom: 35px;
+	color: black;
+}
+
+.article-link {
+	text-decoration: none;
+	text-align: left;
+}
+
+.card-text {
+	text-align: left;
+}
+
+select {
+	/* Center the select box */
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 70px;
+	width: 250px;
+	height: 48px;
+	border-radius: 15px;
+	border: 3px solid #6100ff;
+	color: #fff;
+	font-size: 14px;
+	line-height: 24.2px;
+	text-transform: uppercase;
+	font-weight: 700;
+	background-color: #6100ff;
+	box-shadow: rgba(0, 0, 0, 0.25) 3px 3px 4px 0px;
+	text-align: center !important;
+}
+
+option {
+	color: black;
+	background-color: #fff;
+}
+
+/* Removed the black border around the dropdown when an option was selected */
+select:focus {
+	outline: none;
+	border: 3px solid #6100ff;
+	box-shadow: rgba(0, 0, 0, 0.25) 3px 3px 4px 0px;
+	text-align: center !important;
+}
+
+/* Like button icon */
+.bi-suit-heart {
+	color: #ff0000;
+	padding-right: 5px;
+}
+
+/* Comment button icon */
+.bi-chat-dots {
+	color: rgb(0, 141, 206);
+	padding-right: 5px;
+}
+
+/* Gave the like, comment and profile image section of the card a fixed position at the bottom */
+.bottom-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.062);
+  padding: 20px;
+}
+
+.bottom-info .row {
+	justify-content: space-between;
+}
+
+.card-body {
+  padding-bottom: 60px;
+}
+
+.like-link:hover,
+.comment-link:hover {
+	background-color: rgba(128, 128, 128, 0.233);
+	padding: 1px 4px;
+	border-radius: 5px;
+}
+
+/* Made changes to font of the like and comment count values */
+.like-count,
+.comment-count {
+	color: black;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+/* Styling to the icon displayed at the top left next to the username */
+.bi-person-circle {
+	padding-right: 10px;
+}
+
+/* DARK MODE STYLE CHANGES: */
+.dark-mode {
+	background-color: #0e1217;
+	color: #fff;
+}
+
+.dark-mode .card {
+	background-color: #1c1f26;
+	border: 1px solid #c1c1c168;
+}
+
+.dark-mode .logout-button {
+	background-color: #1c1f26;
+}
+
+.dark-mode .card-title {
+	color: #fff;
+}
+
+.dark-mode .card-text {
+	color: #fff;
+}
+
+.dark-mode .like-count {
+	color: #fff;
+}
+
+.dark-mode .comment-count {
+	color: #fff;
+}
+
+.dark-mode .bottom-info {
+	background-color: #0e1217;
+}
+
+.dark-mode .darkModeButton {
+	background-color: #fff;
+	color: #000;
+	font-size: 24px;
+	border: 4px solid #fff;
+}
+
+
+
+/* References:
+https://www.cdnfonts.com/inter.font
+My own figma design
+My own work from Level 2 Task 18
+*/

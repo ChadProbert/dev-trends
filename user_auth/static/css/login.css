@@ -1,0 +1,188 @@
+/* Importing Inter font */
+@import url("https://fonts.cdnfonts.com/css/inter");
+
+body {
+	font-family: "Inter", sans-serif;
+	/* Removed the horizontal scrollbar */
+	padding-left: 15px;
+	padding-right: 15px;
+	/* added a background image */
+	background: url("/static/images/authentication-background.svg");
+	background-size: cover;
+}
+
+/* Centered the login box vertically and horizontally in the column */
+.login-col {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+
+.welcome-col {
+	color: #6100ff;
+	font-weight: 900;
+	font-size: 40px;
+	line-height: 48.41px;
+}
+
+.login-heading {
+	/* Used % value so that it is responsive to different screen sizes */
+	margin-top: 15%;
+	margin-bottom: 70px;
+	color: #6100ff;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+/* Styling to the login box */
+.card {
+	/* Used a percentage width to make it responsive */
+	width: 50%;
+	height: 500px;
+	border-radius: 20px;
+	border: 3px solid #6100ff;
+	background-color: #fff;
+}
+
+/* Styling of the login button, used values from Figma design */
+.login-button {
+	margin-top: 20px;
+	width: 50%;
+	height: 48px;
+	top: 378px;
+	left: 110px;
+	border-radius: 40px;
+	border: 3px solid #6100ff;
+	color: #fff;
+	font-size: 20px;
+	line-height: 24.2px;
+	text-transform: uppercase;
+	font-weight: 800;
+	background-color: #6100ff;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 4px 0px;
+}
+
+.register-button:hover {
+	background-color: #6100ff;
+	color: #fff;
+	border: 3px solid #6100ff;
+	box-shadow: 0px 0px 15px 5px rgba(97, 0, 255, 0.5);
+	transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+	border: 3px solid #6100ff;
+	box-shadow: 0px 0px 15px 5px rgba(97, 0, 255, 0.5);
+	transition: all 0.3s ease-in-out;
+}
+
+.welcome-subheading {
+	margin-top: 20px;
+}
+
+.welcome-heading,
+.welcome-subheading {
+	font-size: 50px;
+	font-weight: 800;
+}
+
+.welcome-text,
+.welcome-heading,
+.welcome-subheading {
+	/* Centered the content and made the width responsive */
+	margin: auto;
+	width: 70%;
+	padding: 10px;
+}
+
+.welcome-heading {
+	margin-top: 25%;
+}
+
+.welcome-text {
+	font-size: 24px;
+	font-weight: 400;
+	color: #000;
+}
+
+.register-link {
+	color: #0077ed !important;
+	text-decoration: none !important;
+}
+
+.dev-trends-text {
+	/* 2s - 2 seconds to fade in */
+	animation: fadeIn 2s;
+}
+
+.register-button {
+	margin-top: 20px;
+	width: 28%;
+	height: 48px;
+	top: 378px;
+	left: 110px;
+	border-radius: 40px;
+	border: 3px solid #6100ff;
+	color: #6100ff;
+	font-size: 20px;
+	line-height: 24.2px;
+	text-transform: uppercase;
+	font-weight: 900;
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 4px 0px;
+}
+
+/* ANIMATION DEFINITIONS: */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* MOBILE-FRIENDLY ADJUSTMENTS: */
+@media (max-width: 768px) {
+	/* Adjusted layout for smaller screens */
+	.row {
+		flex-direction: column;
+	}
+
+	/* Hides the welcome section for mobile users */
+	.welcome-col {
+		display: none;
+	}
+
+	/* Adjusted the image size to occupy the full width of the screen */
+	.image-col {
+		width: 100%;
+	}
+}
+
+/* TABLET-FRIENDLY AND SMALLER SCREEN ADJUSTMENTS: */
+@media screen and (max-width: 1500px) {
+	.card {
+		width: 60%;
+	}
+	.register-button {
+		width: 36%;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.card {
+		width: 70%;
+	}
+	.register-button {
+		width: 60%;
+	}
+}
+
+/* References:
+https://www.cdnfonts.com/inter.font
+My own previous work from Level 2 Task 22
+*/
