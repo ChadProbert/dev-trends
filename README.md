@@ -39,9 +39,9 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#set-up-your-virtual-env"></a></li>
-        <li><a href="#installing-dependencies"></a></li>
-        <li><a href="#runnin-dev-trends"></a></li>
+        <li><a href="#set-up-your-virtual-env">Set up your Virtual Env</a></li>
+        <li><a href="#installing-dependencies">Installing Dependencies</a></li>
+        <li><a href="#running-dev-trends">Running Dev Trends</a></li>
       </ul>
     </li>
     <li><a href="#sphinx-documentation">Sphinx Documentation</a></li>
