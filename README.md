@@ -92,7 +92,7 @@ The application should now be running at **http://127.0.0.1:8000/**.
 
 <br/>
 
-<img src="images/3.png" alt="homepage" style="border-radius: 5px;">
+<img src="images/1.png" alt="homepage" style="border-radius: 5px;">
 
 ## Running With Docker
 
