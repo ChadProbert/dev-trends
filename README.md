@@ -92,7 +92,15 @@ The application should now be running at **http://127.0.0.1:8000/**.
 
 <br/>
 
+## Usage
+
+<br/>
+
+Register with your credentials and browse the latest development trends.
+
 <img src="images/1.png" alt="homepage" style="border-radius: 5px;">
+
+<br/>
 
 ## Running With Docker
 
